@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shoe Company</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-black text-white">
+    <header
+        class="section-container flex items-center justify-between fixed w-full  left-[50%] -translate-x-[50%] bg-black/70 backdrop-blur-sm z-50 h-20">
+        <a href="#">
+            <img class="w-24 md:w-32" src="./images/logo.png" alt="logo">
+            <p class="text-xs -mt-6 md:text-sm md:-mt-8">The Shoe Company</p>
+        </a>
+        <nav class="hidden md:block space-x-6 lg:space-x-8 lg:text-2xl ">
+            <a class="font-bold" href="#">Home</a>
+            <a class="font-bold" href="#how-it-works">How it Works?</a>
+            <a class="font-bold" href="#about">About</a>
+            <a class="font-bold" href="#testimonials">Testimonials</a>
+            <a class="font-bold" href="#contact">Contact Us</a>
+        </nav>
+        <button class="text-5xl md:hidden">☰</button>
+    </header>
+    <section id="hero"
+        class="bg-[url('./images/hero-bg.png')] bg-cover md:bg-contain bg-no-repeat bg-right pt-36 section-container">
+        <div class="flex flex-col md:flex-row md:items-center justify-between max-w-7xl mx-auto">
+            <h1 class="text-2xl md:text-7xl font-bold leading-[64px] md:leading-[92px]">
+                THE <br> SHOE <br> COMPANY
+            </h1>
+            <div>
+                <img class="w-full max-w-xl" src="./images/hero-img.png" alt="White Shoe Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="relative section-container pt-20 scroll-mt-6">
+        <!-- Blur Background Overlay -->
+        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+        <!-- Content -->
+        <div class="relative z-10">
+            <h2 class="text-3xl text-center font-bold max-w-md mx-auto mb-6 -mt-7 ">
+                Have they finally made the perfect workout shoe?
+            </h2>
+            <div class="max-w-xl mx-auto pt-60 xl:pt-12 relative">
+                <img class="w-full max-w-2xl rotate-6 p-8 media440:p-0 xl:rotate-0"
+                    src="./images/how-it-works-image.png" alt="shoe">
+                <!-- Content Blocks -->
+                <div class="absolute top-0 xl:-translate-x-full max-w-[200px] xl:max-w-xs">
+                    <h3 class="text-lg media560:text-2xl font-bold">THE HEEL</h3>
+                    <p class="text-xs media560:text-lg">
+                        The heel is well-built, has appropriate elevation and is not too rigid.
+                    </p>
+                    <img class="w-32 translate-y-8 xl:ml-auto rotate-45 xl:rotate-0" src="images/arrow-1.png" alt="">
+                </div>
+                <div class="absolute media560:top-0 top-16 right-0 xl:-right-60 max-w-[200px] xl:max-w-xs">
+                    <img class="w-32 media560:w-auto xl:-ml-32 translate-y-full media560:translate-y-60 rotate-[120deg] xl:translate-y-0 xl:rotate-0"
+                        src="images/arrow-2.png" alt="">
+                    <h3 class="text-lg media560:text-2xl font-bold -mt-20">THE FRONT</h3>
+                    <p class="text-xs media560:text-lg">
+                        The front is comfortable and adjusts well to the shape of your foot.
+                    </p>
+                </div>
+                <div class="absolute -bottom-16 max-w-[200px] xl:max-w-xs">
+                    <img class="ml-auto -mb-10 max-w-[150px]" src="images/arrow-3.png" alt="">
+                    <h3 class="text-lg media560:text-2xl font-bold">TRACTION</h3>
+                    <p class="text-xs media560:text-lg">
+                        The shoe has good traction and doesn't slip easily.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-container mt-32 flex flex-col md:flex-row md:space-x-12 scroll-mt-28">
+        <h2 class="text-3xl my-6 text-center md:text-6xl font-bold md:hidden block">About Us!</h2>
+        <div class="bg-[url('./images/about-us-background.png')] bg-no-repeat md:w-full self-center">
+            <img src="./images/about-shoe-company.png" alt="">
+        </div>
+        <div class="space-y-8 max-w-xl md:w-full ">
+            <h2 class="text-6xl font-bold hidden md:block">About Us!</h2>
+            <p>For each one of those shoe sweethearts out there, THE SHOE COMPANY offer the one-stop goal to pick the
+                correct match of footwear. </p>
+            <p>Gone are the days when you needed to go from store to store to locate the correct style and size for
+                yourself.</p>
+            <p>At THE SHOE COMPANY, you can locate a vast accumulation of dashing footwear in all sizes and styles, all
+                within a couple of clicks.</p>
+            <p>Simple right? Not just we are here to save your time, we are offering you the most stunning footwear
+                options from top-tier brands like DAVINCHI, PRINCESS, and SIGNATURE. We offer men’s, women’s, and
+                children’s shoes perfect for every occasion.</p>
+        </div>
+    </section>
+    <section id="testimonials" class="section-container mt-8 pt-8 bg-testimonial-section py-15 md:py-20">
+        <div class="">
+            <h2 class="text-3xl md:text-6xl font-bold text-center">What People are saying about <br> THE SHOE COMPANY ?
+            </h2>
+            <div
+                class="flex flex-col items-center md:items-stretch gap-8 justify-between max-w-5xl mx-auto md:flex-row mt-16 ">
+                <div class="w-60">
+                    <img class="w-full mb-4 rounded-full" src="./images/ProfilePic.jpeg" alt="ProfilePic">
+                    <p>“Looking for shoes that are built just for you? THE SHOE COMPANY is the way to go. Love the
+                        design
+                        and build quality.”</p>
+                </div>
+                <div class="w-60">
+                    <img class="w-full mb-4 rounded-full" src="./images/ProfilePic.jpeg" alt="">
+                    <p>“I love the shoes, the quality, and everyting. They are worth the investment!”</p>
+                </div>
+                <div class="w-60">
+                    <img class="w-full mb-4 rounded-full" src="./images/ProfilePic.jpeg" alt="">
+                    <p>“They make the best and forever lasting shoes. Superb fit and confort is literally the next
+                        level.
+                        Much recommended!”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact"
+        class="section-container flex flex-col lg:flex-row justify-between pt-16 lg:pt-32 mb-16 lg:mb-32">
+        <div class="self-center text-center mb-10 lg:mb-0 shrink-0 md:self-center">
+            <div>
+                <h2 class=" text-3xl md:text-6xl font-bold ">Contact Us</h2>
+            </div>
+            <p class="max-w-[180px] my-8">
+                The SHOE COMPANY,
+                Address,<br>
+                Number
+            </p>
+            <div class="flex space-x-4">
+                <a href="#">
+                    <img src="./images/facebook-icon.svg" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="./images/instagram-icon.svg" alt="instagram">
+                </a>
+                <a href="#">
+                    <img src="./images/twitch-icon.svg" alt="twitch">
+                </a>
+                <a href="#">
+                    <img src="./images/youtube-icon.svg" alt="youtube">
+                </a>
+            </div>
+        </div>
+        <div class="w-full">
+            <iframe class="w-full max-w-xl ml-auto"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.1473371057245!2d71.45163956036022!3d20.90639114189083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be24c18a47c1b35%3A0x4a7d980c4340ed35!2sKovaya%2C%20Gujarat%20365541!5e0!3m2!1sen!2sin!4v1735305547507!5m2!1sen!2sin"
+                height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <div class="text-center">Made by Manan</div>
+</body>
+
+</html>
